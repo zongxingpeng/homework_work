@@ -1,0 +1,23 @@
+@Test
+void shouldReturnTrueWhenGivearr(){
+    int arr[] = new int{2, 3, 4, 5, 6};
+    poker_test Straight = new poker_test();
+    boolean expectedResult = Straight.straight(arr);
+    Assertions.asserEquals(expect:true, expectedResult);
+}
+
+@Test
+void shouldReturnFalseWhenGivearr(){
+    int arr[] = new int{2, 3, 4, 8, 7};
+    poker_test Straight = new poker_test();
+    boolean expectedResult = Straight.straight(arr);
+    Assertions.asserEquals(expect:false, expectedResult);
+}
+
+@Test
+void shouldReturnTrueWhenGivearr(){
+    int arr[] = new int{4, 5, 6, 7, 8};
+    poker_test Straight = new poker_test();
+    boolean expectedResult = Straight.straight(arr);
+    Assertions.asserEquals(expect:true, expectedResult);
+}
