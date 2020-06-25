@@ -1,0 +1,23 @@
+@Test
+void shouldReturnTrueWhenGivearr(){
+    int arr[] = new int{2, 2, 4, 4, 6};
+    poker_test TwoTwoSame = new poker_test();
+    boolean expectedResult = TwoTwoSame.twotwosame(arr);
+    Assertions.asserEquals(expect:true, expectedResult);
+}
+
+@Test
+void shouldReturnFalseWhenGivearr(){
+    int arr[] = new int{2, 2, 4, 5, 6};
+    poker_test TwoTwoSame = new poker_test();
+    boolean expectedResult = TwoTwoSame.twotwosame(arr);
+    Assertions.asserEquals(expect:false, expectedResult);
+}
+
+@Test
+void shouldReturnTrueWhenGivearr(){
+    int arr[] = new int{2, 2, 2, 2, 6};
+    poker_test TwoTwoSame = new poker_test();
+    boolean expectedResult = TwoTwoSame.twotwosame(arr);
+    Assertions.asserEquals(expect:true, expectedResult);
+}
