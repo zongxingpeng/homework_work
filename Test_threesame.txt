@@ -1,6 +1,6 @@
 @Test
 void shouldReturnTrueWhenGivearr(){
-    int arr[] = new int{2, 3, 3, 3, 6};
+    int arr[] = new int[]{2, 3, 3, 3, 6};
     poker_test ThreeSame = new poker_test();
     boolean expectedResult = ThreeSame.threesame(arr);
     Assertions.asserEquals(expect:true, expectedResult);
@@ -8,7 +8,7 @@ void shouldReturnTrueWhenGivearr(){
 
 @Test
 void shouldReturnFalseWhenGivearr(){
-    int arr[] = new int{2, 3, 4, 5, 6};
+    int arr[] = new int[]{2, 3, 4, 5, 6};
     poker_test ThreeSame = new poker_test();
     boolean expectedResult = ThreeSame.threesame(arr);
     Assertions.asserEquals(expect:false, expectedResult);
@@ -16,7 +16,7 @@ void shouldReturnFalseWhenGivearr(){
 
 @Test
 void shouldReturnFalseWhenGivearr(){
-    int arr[] = new int{2, 2, 4, 5, 6};
+    int arr[] = new int[]{2, 2, 4, 5, 6};
     poker_test ThreeSame = new poker_test();
     boolean expectedResult = ThreeSame.threesame(arr);
     Assertions.asserEquals(expect:false, expectedResult);
