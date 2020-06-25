@@ -1,0 +1,23 @@
+@Test
+void shouldReturnTrueWhenGivestr(){
+    String str = "2H 3H 5H 7H 6H";
+    poker_test SameFigure = new poker_test();
+    boolean expectedResult = SameFigure.samefigure(str);
+    Assertions.asserEquals(expect:true, expectedResult);
+}
+
+@Test
+void shouldReturnFalseWhenGivestr(){
+    String str = "2D 3H 5D 7H 6H";
+    poker_test SameFigure = new poker_test();
+    boolean expectedResult = SameFigure.samefigure(str);
+    Assertions.asserEquals(expect:false, expectedResult);
+}
+
+@Test
+void shouldReturnTrueWhenGivestr(){
+    String str = "2H 7H 5H 8H 6H";
+    poker_test SameFigure = new poker_test();
+    boolean expectedResult = SameFigure.samefigure(str);
+    Assertions.asserEquals(expect:true, expectedResult);
+}
