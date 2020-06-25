@@ -1,20 +1,20 @@
 @Test
 void shouldReturn1WhenGiveChar2(){
-    poker Change = new poker();
+    poker_test Change = new poker_test();
     Integer expectedResult = Change.change('2');
     Assertions.asserEquals(expect:1, expectedResult);
 }
 
 @Test
 void shouldReturn2WhenGiveChar3(){
-    poker Change = new poker();
+    poker_test Change = new poker_test();
     Integer expectedResult = Change.change('3');
     Assertions.asserEquals(expect:2, expectedResult);
 }
 
 @Test
 void shouldReturn13WhenGiveCharA(){
-    poker Change = new poker();
+    poker_test Change = new poker_test();
     Integer expectedResult = Change.change('A');
     Assertions.asserEquals(expect:13, expectedResult);
 }
